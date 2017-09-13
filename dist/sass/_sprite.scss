@@ -1,0 +1,200 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$admin-ic-name: 'admin-ic';
+$admin-ic-x: 70px;
+$admin-ic-y: 97px;
+$admin-ic-offset-x: -70px;
+$admin-ic-offset-y: -97px;
+$admin-ic-width: 29px;
+$admin-ic-height: 30px;
+$admin-ic-total-width: 132px;
+$admin-ic-total-height: 131px;
+$admin-ic-image: '../img/sprite.png';
+$admin-ic: (70px, 97px, -70px, -97px, 29px, 30px, 132px, 131px, '../img/sprite.png', 'admin-ic', );
+$bag-ic-name: 'bag-ic';
+$bag-ic-x: 35px;
+$bag-ic-y: 97px;
+$bag-ic-offset-x: -35px;
+$bag-ic-offset-y: -97px;
+$bag-ic-width: 35px;
+$bag-ic-height: 33px;
+$bag-ic-total-width: 132px;
+$bag-ic-total-height: 131px;
+$bag-ic-image: '../img/sprite.png';
+$bag-ic: (35px, 97px, -35px, -97px, 35px, 33px, 132px, 131px, '../img/sprite.png', 'bag-ic', );
+$buildings-ic-name: 'buildings-ic';
+$buildings-ic-x: 97px;
+$buildings-ic-y: 34px;
+$buildings-ic-offset-x: -97px;
+$buildings-ic-offset-y: -34px;
+$buildings-ic-width: 35px;
+$buildings-ic-height: 34px;
+$buildings-ic-total-width: 132px;
+$buildings-ic-total-height: 131px;
+$buildings-ic-image: '../img/sprite.png';
+$buildings-ic: (97px, 34px, -97px, -34px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'buildings-ic', );
+$children-ic-name: 'children-ic';
+$children-ic-x: 0px;
+$children-ic-y: 62px;
+$children-ic-offset-x: 0px;
+$children-ic-offset-y: -62px;
+$children-ic-width: 35px;
+$children-ic-height: 35px;
+$children-ic-total-width: 132px;
+$children-ic-total-height: 131px;
+$children-ic-image: '../img/sprite.png';
+$children-ic: (0px, 62px, 0px, -62px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'children-ic', );
+$commerse-ic-name: 'commerse-ic';
+$commerse-ic-x: 97px;
+$commerse-ic-y: 0px;
+$commerse-ic-offset-x: -97px;
+$commerse-ic-offset-y: 0px;
+$commerse-ic-width: 35px;
+$commerse-ic-height: 34px;
+$commerse-ic-total-width: 132px;
+$commerse-ic-total-height: 131px;
+$commerse-ic-image: '../img/sprite.png';
+$commerse-ic: (97px, 0px, -97px, 0px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'commerse-ic', );
+$hands-ic-name: 'hands-ic';
+$hands-ic-x: 0px;
+$hands-ic-y: 97px;
+$hands-ic-offset-x: 0px;
+$hands-ic-offset-y: -97px;
+$hands-ic-width: 35px;
+$hands-ic-height: 34px;
+$hands-ic-total-width: 132px;
+$hands-ic-total-height: 131px;
+$hands-ic-image: '../img/sprite.png';
+$hands-ic: (0px, 97px, 0px, -97px, 35px, 34px, 132px, 131px, '../img/sprite.png', 'hands-ic', );
+$home-ic-name: 'home-ic';
+$home-ic-x: 70px;
+$home-ic-y: 62px;
+$home-ic-offset-x: -70px;
+$home-ic-offset-y: -62px;
+$home-ic-width: 27px;
+$home-ic-height: 35px;
+$home-ic-total-width: 132px;
+$home-ic-total-height: 131px;
+$home-ic-image: '../img/sprite.png';
+$home-ic: (70px, 62px, -70px, -62px, 27px, 35px, 132px, 131px, '../img/sprite.png', 'home-ic', );
+$planet-ic-name: 'planet-ic';
+$planet-ic-x: 0px;
+$planet-ic-y: 0px;
+$planet-ic-offset-x: 0px;
+$planet-ic-offset-y: 0px;
+$planet-ic-width: 62px;
+$planet-ic-height: 62px;
+$planet-ic-total-width: 132px;
+$planet-ic-total-height: 131px;
+$planet-ic-image: '../img/sprite.png';
+$planet-ic: (0px, 0px, 0px, 0px, 62px, 62px, 132px, 131px, '../img/sprite.png', 'planet-ic', );
+$portal-ic-name: 'portal-ic';
+$portal-ic-x: 35px;
+$portal-ic-y: 62px;
+$portal-ic-offset-x: -35px;
+$portal-ic-offset-y: -62px;
+$portal-ic-width: 35px;
+$portal-ic-height: 35px;
+$portal-ic-total-width: 132px;
+$portal-ic-total-height: 131px;
+$portal-ic-image: '../img/sprite.png';
+$portal-ic: (35px, 62px, -35px, -62px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'portal-ic', );
+$search-ic-name: 'search-ic';
+$search-ic-x: 97px;
+$search-ic-y: 68px;
+$search-ic-offset-x: -97px;
+$search-ic-offset-y: -68px;
+$search-ic-width: 19px;
+$search-ic-height: 19px;
+$search-ic-total-width: 132px;
+$search-ic-total-height: 131px;
+$search-ic-image: '../img/sprite.png';
+$search-ic: (97px, 68px, -97px, -68px, 19px, 19px, 132px, 131px, '../img/sprite.png', 'search-ic', );
+$weigher-ic-name: 'weigher-ic';
+$weigher-ic-x: 62px;
+$weigher-ic-y: 0px;
+$weigher-ic-offset-x: -62px;
+$weigher-ic-offset-y: 0px;
+$weigher-ic-width: 35px;
+$weigher-ic-height: 35px;
+$weigher-ic-total-width: 132px;
+$weigher-ic-total-height: 131px;
+$weigher-ic-image: '../img/sprite.png';
+$weigher-ic: (62px, 0px, -62px, 0px, 35px, 35px, 132px, 131px, '../img/sprite.png', 'weigher-ic', );
+$spritesheet-width: 132px;
+$spritesheet-height: 131px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($admin-ic, $bag-ic, $buildings-ic, $children-ic, $commerse-ic, $hands-ic, $home-ic, $planet-ic, $portal-ic, $search-ic, $weigher-ic, );
+$spritesheet: (132px, 131px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

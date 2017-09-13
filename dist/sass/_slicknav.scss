@@ -1,0 +1,101 @@
+@import 'core';
+@import 'theme';
+@import "custom-variables";
+
+.slicknav_btn {
+	background-color: $bodyBg;
+	@media (max-width: 479px) {
+		margin: 0;
+	}
+	
+	.slicknav_icon-bar + .slicknav_icon-bar {
+		margin-top: .25em;
+	}
+}
+
+.slicknav_menu {
+	display: none;
+	@media (max-width: 599px) {
+		display: inline-block;
+		float: right;
+		background: $bodyBg;
+		margin-top: 12px;
+	}
+	
+	.slicknav_icon {
+		width: 2em;
+		height: 1.25em;
+		@media (max-width: 479px) {
+			width: 1.75em;
+		}
+			
+		&::before {
+			width: 2em;
+			height: 1.25em;
+			@media (max-width: 479px) {
+				width: 1.75em;
+			}
+		}
+	}
+	
+	.slicknav_icon-bar {
+		background-color: $generalOrange;
+		width: 2em;
+		height: .25em;
+		box-shadow: none;
+		@media (max-width: 479px) {
+			width: 1.75em;
+		}
+	}
+	
+}
+
+.slicknav_nav {
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	background: $bodyBg;
+	border-top: 1px solid $generalOrange;
+	padding-bottom: 20px;
+	font-size: 18px;
+	
+	a {
+		color: $generalColor;
+		margin: 0;
+		padding: 10px;
+		&:hover {
+			background: $bodyBg;
+			color: $generalOrange;
+			border-radius: 0;
+		}
+	}
+	
+	.search {
+		margin-top: 10px;
+		padding: 0 10px;
+	}
+	
+	.search-ic {
+		display: none;
+	}
+	
+	.form-control {
+		width: 70%;
+		height: 48px;
+		border: 1px solid $generalOrange;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	
+	.form-btn {
+		height: 48px;
+		width: 30%;
+		margin-left: -5px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		@media (max-width: 479px) {
+			padding: 0 8px;
+		}
+	}
+}

@@ -1,0 +1,92 @@
+//jQueryFormStyler
+@import "custom-variables";
+
+.jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+	width: 220px;
+	@media (max-width: 959px) {
+		width: 100%;
+	}
+}
+.jq-selectbox__select {
+	height: 49px;
+	padding: 0 15px;
+	border-radius: 2px;
+	background: $bodyBg;
+	color: $formControlTextColor;
+}
+.jq-selectbox__select-text {
+	display: block;
+	line-height: 49px;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jq-selectbox .placeholder {
+	color: $formControlTextColor;
+}
+.jq-selectbox__trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 41px;
+	height: 100%;
+}
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.jq-selectbox__trigger-arrow::before,
+.jq-selectbox__trigger-arrow::after {
+	content: '';
+	display: inline-block;
+	border: 6px solid transparent;
+	position: absolute;
+	right: 15px;
+}
+.jq-selectbox__trigger-arrow::before {
+	top: 8px;
+	border-bottom: 9px solid #939fa4;
+}
+.jq-selectbox__trigger-arrow::after {
+	bottom: 5px;
+	border-top: 9px solid #939fa4;
+}
+.jq-selectbox__dropdown {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin-top: 47px;
+	width: 100%;
+	padding: 0;
+	border-top: 1px solid $generalOrange;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFF;
+}
+.jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.jq-selectbox li {
+	min-height: 26px;
+	padding: 6px 15px;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	white-space: nowrap;
+	color: $formControlTextColor;
+	
+	&:last-child {
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+}
+.jq-selectbox li:hover {
+	background-color: $generalOrange;
+	color: #FFF;
+}

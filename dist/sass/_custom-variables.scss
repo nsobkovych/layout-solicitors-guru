@@ -1,0 +1,43 @@
+// STANDART FONT
+// general font family
+$generalFont: 'Open Sans';
+// general font size
+$generalFontSize: 12px;
+
+// STANDART SIZES
+// desktop container width
+$desktopContainerWidth: 1060px;
+// medium device container width
+$mediumDeviceContainerWidth: 998px;
+// all devices < 1024px container width
+$fullWidthContainerWidth: 100%;
+// desktop header height
+$desktopHeaderHeight: 80px;
+
+
+// STANDART COLOR
+// general body bg
+$bodyBg: #fff;
+// general text color
+$generalColor: #000;
+
+// general orange color
+$generalOrange: #ef6223;
+// general blue color
+$generalBlue: #30436b;
+// general orange color hover
+$generalOrangeHover: #d0551e;
+
+// general form element text color
+$formControlTextColor: #7e878d;
+// general color for simple text
+$simpleTextColor: #5a6464;
+
+// general color for header text
+$headerTextColor: #515a60;
+// general color for paragraph
+$paragraphTextColor: #6c767e;
+
+// grey bg
+$greyBg: #f6f8f8;
+$blue-bg: $generalBlue;

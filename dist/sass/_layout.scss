@@ -1,0 +1,291 @@
+@import "custom-variables";
+
+.container {
+	width: $desktopContainerWidth;
+	margin: 0 auto;
+	padding: 0 10px;
+	@media (max-width: 1084px) {
+		width: $mediumDeviceContainerWidth;
+	}
+	@media (max-width: 1023px) {
+		width: $fullWidthContainerWidth;
+	}
+}
+.row {
+	margin: 0 -10px;
+}
+.icon {
+	display: inline-block;
+}
+
+// standart form element style
+.form-control {
+	display: inline-block;
+	height: 57px;
+	padding: 0 15px;
+	border-radius: 2px;
+	font-size: 16px;
+	color: $formControlTextColor;
+	@media (max-width: 479px) {
+		padding: 0 8px;
+	}
+}
+
+.form-btn {
+	display: inline-block;
+	border-radius: 2px;
+	height: 57px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	background: $generalOrange;
+	padding: 0 27px;
+	text-transform: uppercase;
+	
+	&:hover {
+		background: $generalOrangeHover;
+	}
+}
+
+input[type="checkbox"] {
+	display: none;
+	
+	& + label {
+		display: inline-block;
+		cursor: pointer;
+		
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			background: #fff;
+			border-radius: 2px;
+			margin-right: 14px;
+			vertical-align: top;
+		}
+		
+		& + &::before {
+			vertical-align: middle;
+		}
+	}
+	&:checked {
+		& + label {
+			&::before {
+				background: #fff url("../img/checkbox-checked-bg.png") 
+							no-repeat center center;
+			}
+		}
+	}
+}
+
+.simple-text-block {
+	padding: 29px 0;
+	font-size: 18px;
+	color: $simpleTextColor;
+	border-bottom: 1px solid #e4ebec;
+	@media (max-width: 1023px) {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+// standart button
+.btn {
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 20px;
+	@media (max-width: 767px) {
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	
+	&.white-btn {
+		border-color: #fff;
+		color: #fff;
+		
+		&:hover {
+			background: #fff;
+			color: $generalBlue;
+		}
+	}
+	
+	&.orange-btn {
+		border-color: $generalOrange;
+		color: $generalOrange;
+		
+		&:hover {
+			background: $generalOrange;
+			color: #fff;
+		}
+	}
+}
+
+// header
+.header {
+	height: $desktopHeaderHeight;
+	width: 100%;
+	background: #fff;
+	position: relative;
+	
+	.logo {
+		float: left;
+		margin: 15px 0 0 6px;
+	}
+	
+	.header-nav {
+		float: right;
+		margin: 15px 19px 0 0;
+		@extend %vertical-align;
+		@media (max-width: 599px) {
+			display: none;
+		}
+		
+		li {
+			display: inline-block;
+			height: 36px;
+			line-height: 36px;
+			& + li {
+				margin-left: 23px;
+			}
+			&:last-child {
+				margin-left: 41px;
+			}
+			
+			a {
+				font-size: 16px;
+				color: #000;
+				&:hover {
+					color: $generalOrange;
+				}
+			}
+		}
+		
+		.search-ic {
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		
+		.close {
+			display: inline-block;
+			background: $bodyBg;
+			width: 19px;
+			height: 36px;
+			cursor: pointer;
+			vertical-align: top;
+			
+			&::before,
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 19px;
+				height: 1px;
+				background: $generalOrange;
+				position: absolute;
+				top: 50%;
+			}
+			&::before {
+				left: 0;
+				transform: rotate(45deg);
+			}
+			&::after {
+				right: 0;
+				transform: rotate(-45deg);
+			}
+			
+			&:hover::before,
+			&:hover::after {
+				background: $generalOrangeHover;
+			}
+		}
+		
+		.search {
+			position: relative;
+		}
+		
+		.inner-search {
+			position: absolute;
+			top: 0;
+			right: 26px;
+			display: none;
+			white-space: nowrap;
+			overflow: hidden;
+			
+			input {
+				height: 36px;
+				& + input {
+					margin-left: -5px;
+				}
+			}
+			
+			.form-control {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				border: 1px solid $generalOrange;
+				overflow: hidden;
+			}
+			
+			.form-btn {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				background: $generalOrange url("../img/search-ic-white.png") 
+							no-repeat center center;
+				color: transparent;
+				padding: 0;
+				&:hover {
+					background: $generalOrangeHover url("../img/search-ic-white.png") 
+								no-repeat center center;
+				}
+			}
+		}
+	}
+}
+
+// footer
+.footer {
+	text-align: center;
+	padding: 42px 0 10px;
+	
+	.footer-nav {
+		font-size: 12px;
+		font-weight: 600;
+		
+		li {
+			display: inline-block;
+			@media (max-width: 479px) {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			& + li {
+				margin-left: 20px;
+				@media (max-width: 479px) {
+					margin-left: 0;
+				}
+			}
+			
+			a {
+				text-transform: uppercase;
+				color: $headerTextColor;
+				&:hover {
+					color: $generalOrange;
+				}
+			}
+		}
+	}
+	
+	.logo {
+		margin: 34px 0 28px;
+	}
+	
+	span {
+		font-size: 14px;
+		color: #7d858b;
+	}
+}
