@@ -27,6 +27,8 @@ gulp.task('sprite', function () {
     return merge(imgStream, cssStream);
 });
 
-gulp.task('watch', ['sass'], function(){
+gulp.task('watch', ['sprite', 'sass'], function(){
 	gulp.watch('dist/sass/**/*.scss', ['sass']);
-})
+});
+
+gulp.task('default', ['watch']);

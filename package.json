@@ -1,17 +1,18 @@
 {
-  "name": "template",
+  "name": "Solicitors-Guru",
   "version": "1.0.0",
-  "description": "new clean template",
-  "main": "index.js",
+  "description": "Responsive layout",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "dmgame",
+  "author": "Sobkovych Nataliya",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^3.1.0",
-    "merge-stream": "^1.0.1"
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~3.1.1",
+    "gulp-sass": "~3.1.0",
+    "gulp.spritesmith": "~6.5.1",
+    "merge-stream": "~1.0.1"
   }
 }
